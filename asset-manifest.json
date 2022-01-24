@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bitcoin-app-react/static/css/main.0df10776.css",
+    "main.js": "/bitcoin-app-react/static/js/main.6c4fa063.js",
+    "static/js/787.151b4708.chunk.js": "/bitcoin-app-react/static/js/787.151b4708.chunk.js",
+    "static/media/loading.gif": "/bitcoin-app-react/static/media/loading.093a6a2655342a37dc2b.gif",
+    "index.html": "/bitcoin-app-react/index.html",
+    "main.0df10776.css.map": "/bitcoin-app-react/static/css/main.0df10776.css.map",
+    "main.6c4fa063.js.map": "/bitcoin-app-react/static/js/main.6c4fa063.js.map",
+    "787.151b4708.chunk.js.map": "/bitcoin-app-react/static/js/787.151b4708.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0df10776.css",
+    "static/js/main.6c4fa063.js"
+  ]
+}
