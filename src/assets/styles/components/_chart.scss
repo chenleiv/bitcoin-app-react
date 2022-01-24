@@ -1,0 +1,30 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+}
+
+.recharts-surface {
+  // width: 400px;
+  font-size: 0.6rem;
+
+  .recharts-line-curve {
+    stroke-width: 1;
+  }
+}
+.recharts-wrapper {
+  margin: 0;
+}
+
+@media screen and (min-width: 640px) {
+  .recharts-surface {
+    width: 1000px;
+  }
+}

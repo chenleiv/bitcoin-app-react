@@ -1,0 +1,138 @@
+.homepage-container {
+  text-align: center;
+
+  .home-grid {
+    display: grid;
+    grid-template-rows: 100px 150px 150px 50px 100px;
+
+    .market-details {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      width: fit-content;
+      font-size: rem(14px);
+      color: $clr2;
+      h1 {
+        color: $clr2;
+      }
+    }
+
+    .log-out-btn {
+      grid-column: 3/4;
+      height: fit-content;
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      background-image: radial-gradient(100% 100% at 100% 0, #a0abb0 0, $clr4 100%);
+      border: 0;
+      border-radius: 3px;
+      color: $clr5;
+      cursor: pointer;
+      padding: 0 25px 0 25px;
+
+      &:hover {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(59, 30, 119, 0.3) 0 7px 13px -3px,
+          #616374 0 -3px 0 inset;
+        transform: translateY(-2px);
+      }
+    }
+
+    .user-greet {
+      grid-column: 1/4;
+      grid-row: 2/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+      h1 {
+        margin-left: 1rem;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
+    }
+
+    .user-wallet {
+      grid-column: 1/4;
+      grid-row: 3/4;
+      border: 4px solid $clr4;
+      font-size: rem(20px);
+      h1 {
+        margin-top: 20px;
+      }
+    }
+
+    .move-section {
+      grid-column: 1/4;
+      grid-row: 5/6;
+      text-align: start;
+
+      .last-tran {
+        font-size: rem(17px);
+        margin-bottom: 10px;
+        margin-bottom: 10px;
+        width: 70%;
+      }
+    }
+  }
+}
+
+.moves-list {
+  margin-bottom: 10px;
+  // border: 1px solid $clr2;
+  // width: 40%;
+  padding: 12px 0;
+}
+
+// TABLET //
+@media screen and (min-width: 640px) {
+  .homepage-container {
+    .home-grid {
+      display: grid;
+      grid-template-rows: 50px 200px 150px 50px 300px;
+
+      .market-details {
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        font-weight: 700;
+        h1 {
+          font-weight: 700;
+        }
+      }
+
+      .log-out-btn {
+        grid-column: 3/4;
+        padding: 10px 25px 10px 25px;
+        font-size: 18px;
+      }
+
+      .user-greet {
+        grid-column: 2/3;
+      }
+
+      .user-wallet {
+        grid-column: 2/3;
+      }
+
+      .move-section {
+        grid-column: 2/4;
+
+        .last-tran {
+          font-size: rem(20px);
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+// DESKTOP //
+
+@media screen and (min-width: 1080px) {
+  // .homepage-container {
+  // }
+}

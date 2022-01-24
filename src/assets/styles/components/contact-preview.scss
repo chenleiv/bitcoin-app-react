@@ -1,0 +1,43 @@
+.contact-page {
+  .contact-preview {
+    display: flex;
+    border-bottom: 1px solid rgba(157, 160, 225, 0.296);
+    padding: 5px;
+    &:hover {
+      background-color: $clr1;
+    }
+    cursor: pointer;
+    img {
+      margin-inline-end: 10px;
+      width: 60px;
+      border-radius: 10px;
+    }
+    .contact {
+      font-size: rem(14px);
+    }
+  }
+}
+
+// DESKTOP //
+
+@media screen and (min-width: 960px) {
+  .contact-page {
+    display: grid;
+    .contact-preview {
+      display: flex;
+      // color: $clr5;
+      border-bottom: 1px solid rgba(157, 160, 225, 0.296);
+      padding: 5px;
+      &:hover {
+        background-color: $clr1;
+      }
+      cursor: pointer;
+      img {
+        margin-inline-end: 50px;
+        width: 90px;
+        border-radius: 6px;
+        object-fit: contain;
+      }
+    }
+  }
+}

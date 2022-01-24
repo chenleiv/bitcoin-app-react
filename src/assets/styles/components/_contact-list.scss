@@ -1,0 +1,48 @@
+.contact-list {
+  max-height: 100vh;
+  .list-item {
+    cursor: pointer;
+  }
+
+  .list-item:hover {
+    background-color: rgba(224, 224, 224, 0.534);
+  }
+}
+.action-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1080px) {
+  .contact-list {
+    max-height: 100vh;
+    width: 70%;
+    padding: 0;
+    margin: auto 0;
+    .list-item {
+      cursor: pointer;
+    }
+
+    .list-item:hover {
+      background-color: rgba(224, 224, 224, 0.534);
+    }
+  }
+  .action-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

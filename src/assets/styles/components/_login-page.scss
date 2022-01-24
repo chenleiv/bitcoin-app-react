@@ -1,0 +1,80 @@
+.login-container {
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  .login {
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+
+  input {
+    border: none;
+    border-radius: 3px;
+    background: $clr5;
+    line-height: 20px;
+    padding: 8px;
+    font-size: rem(16px);
+    margin-block-end: 30px;
+    // width: 50%;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, #a0abb0 0, $clr4 100%);
+    border: 0;
+    border-radius: 3px;
+    color: $clr5;
+    cursor: pointer;
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+
+    // &:focus {
+    //   box-shadow: #545a82 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    //     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #585d85 0 -3px 0 inset;
+    // }
+
+    &:hover {
+      box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(59, 30, 119, 0.3) 0 7px 13px -3px,
+        #616374 0 -3px 0 inset;
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      box-shadow: #3b3d48 0 3px 7px inset;
+      transform: translateY(2px);
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .login-container {
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .login {
+      text-align: center;
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+
+    input {
+      width: 40%;
+    }
+  }
+}

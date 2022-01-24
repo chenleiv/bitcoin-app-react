@@ -1,0 +1,45 @@
+.edit-form {
+  flex-direction: column;
+  align-items: center;
+  label {
+    color: $clr5;
+    text-align: center;
+  }
+
+  .back {
+    font-size: rem(26px);
+  }
+  input {
+    border: none;
+    border-radius: 3px;
+    background: $clr5;
+    box-shadow: inset 0 0 0 2px #dfe1e6;
+    box-sizing: border-box;
+    display: block;
+    line-height: 20px;
+    margin-bottom: 12px;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-block-end: 40px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, #a0abb0 0, $clr4 100%);
+    border: 0;
+    border-radius: 3px;
+    color: $clr5;
+    cursor: pointer;
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+
+    &:hover {
+      box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(59, 30, 119, 0.3) 0 7px 13px -3px,
+        #616374 0 -3px 0 inset;
+      transform: translateY(-2px);
+    }
+  }
+}
